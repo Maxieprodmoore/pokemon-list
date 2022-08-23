@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sonsie+One&display=swap");
+.paginationNav {
+  text-align: center;
+  margin-top: 1.25%;
+}
+.paginationNav sl-button::part(base) {
+  margin-right: 0.5%;
+}
+
+.pokedexCard {
+  width: 90vw;
+  min-width: 20vw;
+  margin-bottom: 2%;
+}
+
+@media only screen and (max-width: 1080px) {
+  .pokedexCard::part(base) {
+    width: calc(50vw - 2%);
+    margin-right: 2%;
+    margin-left: 0;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Permanent Marker", cursive;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+p,
+a {
+  font-family: "Sonsie One", cursive;
+  font-size: 1.2rem;
+}
+
+.loading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.loading sl-spinner {
+  font-size: 3rem;
+  --track-color: red;
+}
+.loading p {
+  font-size: 2.8rem;
+}/*# sourceMappingURL=master.css.map */

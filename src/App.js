@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/master.css';
+import '@shoelace-style/shoelace/dist/themes/light.css';
+import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path.js';
+import PokedexPage from './pages/PokedexPage';
+setBasePath('https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.81/dist');
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PokedexPage />
     </div>
   );
 }

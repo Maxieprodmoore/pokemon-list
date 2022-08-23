@@ -1,0 +1,13 @@
+.pokedexCard {
+  width: 90vw;
+  min-width: 20vw;
+  margin-bottom: 2%;
+}
+
+@media only screen and (max-width: 1080px) {
+  .pokedexCard::part(base) {
+    width: calc(50vw - 2%);
+    margin-right: 2%;
+    margin-left: 0;
+  }
+}

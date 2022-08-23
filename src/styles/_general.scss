@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sonsie+One&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Permanent Marker", cursive;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+p,
+a {
+  font-family: "Sonsie One", cursive;
+  font-size: 1.2rem;
+}
+
+//Loading page
+.loading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  sl-spinner {
+    font-size: 3rem;
+    --track-color: red;
+  }
+
+  p {
+    font-size: 2.8rem;
+  }
+}
